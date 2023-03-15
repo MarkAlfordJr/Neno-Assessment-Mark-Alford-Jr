@@ -13,6 +13,10 @@
 		1B46729629C214EF007431B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B46729529C214EF007431B8 /* Preview Assets.xcassets */; };
 		1B4672A129C214EF007431B8 /* Neno_Asessment_MarkATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672A029C214EF007431B8 /* Neno_Asessment_MarkATests.swift */; };
 		1B4672AC29C214EF007431B8 /* Neno_Asessment_MarkAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672AB29C214EF007431B8 /* Neno_Asessment_MarkAUITests.swift */; };
+		1B4672BD29C21550007431B8 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672BC29C21550007431B8 /* PeopleModel.swift */; };
+		1B4672BF29C2157A007431B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672BE29C2157A007431B8 /* NetworkManager.swift */; };
+		1B4672C129C215E1007431B8 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672C029C215E1007431B8 /* FeedCardView.swift */; };
+		1B4672C329C2160E007431B8 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4672C229C2160E007431B8 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		1B4672A729C214EF007431B8 /* Neno-Asessment-MarkAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neno-Asessment-MarkAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4672AB29C214EF007431B8 /* Neno_Asessment_MarkAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neno_Asessment_MarkAUITests.swift; sourceTree = "<group>"; };
 		1B4672AD29C214EF007431B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4672BC29C21550007431B8 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		1B4672BE29C2157A007431B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1B4672C029C215E1007431B8 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
+		1B4672C229C2160E007431B8 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1B46728E29C214EA007431B8 /* Neno_Asessment_MarkAApp.swift */,
-				1B46729029C214EA007431B8 /* ContentView.swift */,
+				1B4672B929C21500007431B8 /* Networking */,
+				1B4672BB29C21512007431B8 /* Views */,
+				1B4672C429C21636007431B8 /* App */,
 				1B46729229C214EF007431B8 /* Assets.xcassets */,
 				1B46729729C214EF007431B8 /* Info.plist */,
 				1B46729429C214EF007431B8 /* Preview Content */,
@@ -128,6 +138,40 @@
 				1B4672AD29C214EF007431B8 /* Info.plist */,
 			);
 			path = "Neno-Asessment-MarkAUITests";
+			sourceTree = "<group>";
+		};
+		1B4672B929C21500007431B8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B4672BA29C21509007431B8 /* Models */,
+				1B4672BE29C2157A007431B8 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B4672BA29C21509007431B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B4672BC29C21550007431B8 /* PeopleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B4672BB29C21512007431B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B4672C029C215E1007431B8 /* FeedCardView.swift */,
+				1B4672C229C2160E007431B8 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B4672C429C21636007431B8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B46729029C214EA007431B8 /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4672BF29C2157A007431B8 /* NetworkManager.swift in Sources */,
+				1B4672C129C215E1007431B8 /* FeedCardView.swift in Sources */,
+				1B4672C329C2160E007431B8 /* ListView.swift in Sources */,
 				1B46729129C214EA007431B8 /* ContentView.swift in Sources */,
+				1B4672BD29C21550007431B8 /* PeopleModel.swift in Sources */,
 				1B46728F29C214EA007431B8 /* Neno_Asessment_MarkAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
